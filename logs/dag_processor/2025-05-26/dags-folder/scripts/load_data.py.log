@@ -1,0 +1,12 @@
+{"timestamp":"2025-05-26T04:33:38.503719","level":"info","event":"Filling up the DagBag from /home/sheela/airflow/dags/scripts/load_data.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-05-26T04:34:30.288545","level":"info","event":"Filling up the DagBag from /home/sheela/airflow/dags/scripts/load_data.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-05-26T04:35:03.172318","level":"info","event":"Filling up the DagBag from /home/sheela/airflow/dags/scripts/load_data.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-05-26T04:35:53.130222","level":"info","event":"Filling up the DagBag from /home/sheela/airflow/dags/scripts/load_data.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-05-26T04:36:24.106525","level":"info","event":"Filling up the DagBag from /home/sheela/airflow/dags/scripts/load_data.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-05-26T04:36:58.678841","level":"info","event":"Filling up the DagBag from /home/sheela/airflow/dags/scripts/load_data.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-05-26T04:37:29.624530","level":"info","event":"Filling up the DagBag from /home/sheela/airflow/dags/scripts/load_data.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-05-26T04:38:03.406583","level":"info","event":"Filling up the DagBag from /home/sheela/airflow/dags/scripts/load_data.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-05-26T04:38:43.442042","level":"info","event":"Filling up the DagBag from /home/sheela/airflow/dags/scripts/load_data.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-05-26T04:49:27.032376","level":"info","event":"Filling up the DagBag from /home/sheela/airflow/dags/scripts/load_data.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-05-26T08:48:42.400328","level":"info","event":"Filling up the DagBag from /home/sheela/airflow/dags/scripts/load_data.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-05-26T08:49:21.859210","level":"info","event":"Filling up the DagBag from /home/sheela/airflow/dags/scripts/load_data.py","logger":"airflow.models.dagbag.DagBag"}

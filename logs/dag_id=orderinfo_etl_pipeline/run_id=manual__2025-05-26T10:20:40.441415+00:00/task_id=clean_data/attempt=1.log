@@ -1,0 +1,11 @@
+{"timestamp":"2025-05-26T10:22:05.805316","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-05-26T10:22:05.828754","level":"info","event":"Filling up the DagBag from /home/sheela/airflow/dags/orderinfo_etl_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-05-26T10:22:10.850288Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T10:22:10.851831Z","level":"info","event":" Previous state of the Task instance: queued","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T10:22:10.852167Z","level":"info","event":"Current task name:clean_data","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T10:22:10.852430Z","level":"info","event":"Dag name:orderinfo_etl_pipeline","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T10:22:11.769647Z","level":"info","event":"Data cleaned and saved as 'cleaned_orders.csv'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T10:22:11.781257","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator"}
+{"timestamp":"2025-05-26T10:22:11.823697Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T10:22:11.824614Z","level":"info","event":" Previous state of the Task instance: running","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T10:22:11.842558Z","level":"info","event":"Task operator:<Task(PythonOperator): clean_data>","chan":"stdout","logger":"task"}

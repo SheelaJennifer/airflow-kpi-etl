@@ -1,0 +1,4 @@
+{"timestamp":"2025-05-20T09:01:17.641217","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-05-20T09:01:17.643147","level":"info","event":"Filling up the DagBag from /home/sheela/airflow/dags/orderinfo_etl_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-05-20T09:01:17.968699Z","level":"error","event":"Server indicated the task shouldn't be running anymore. Terminating process","detail":{"detail":{"reason":"running_elsewhere","message":"TI is already running elsewhere","current_hostname":"","current_pid":null}},"logger":"task"}
+{"timestamp":"2025-05-20T09:01:22.972834Z","level":"error","event":"Task killed!","logger":"task"}

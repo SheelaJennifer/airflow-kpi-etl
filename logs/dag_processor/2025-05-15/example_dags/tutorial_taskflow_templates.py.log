@@ -1,0 +1,2 @@
+{"timestamp":"2025-05-15T14:01:21.952885","level":"info","event":"Filling up the DagBag from /mnt/c/Users/SJENNIFE/airflow_test/lib/python3.12/site-packages/airflow/example_dags/tutorial_taskflow_templates.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-05-15T14:01:55.874211","level":"info","event":"Filling up the DagBag from /mnt/c/Users/SJENNIFE/airflow_test/lib/python3.12/site-packages/airflow/example_dags/tutorial_taskflow_templates.py","logger":"airflow.models.dagbag.DagBag"}

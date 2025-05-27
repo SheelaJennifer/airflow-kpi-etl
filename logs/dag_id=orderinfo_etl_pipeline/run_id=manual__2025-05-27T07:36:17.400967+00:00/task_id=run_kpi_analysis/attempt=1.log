@@ -1,0 +1,11 @@
+{"timestamp":"2025-05-27T07:37:03.342556","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-05-27T07:37:03.408786","level":"info","event":"Filling up the DagBag from /home/sheela/airflow/dags/orderinfo_etl_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-05-27T07:37:06.000819Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-27T07:37:06.001643Z","level":"info","event":" Previous state of the Task instance: queued","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-27T07:37:06.002068Z","level":"info","event":"Current task name:run_kpi_analysis","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-27T07:37:06.002443Z","level":"info","event":"Dag name:orderinfo_etl_pipeline","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-27T07:37:06.338765","level":"warning","event":"pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.","category":"UserWarning","filename":"/home/sheela/airflow/dags/kpi_analysis.py","lineno":39,"logger":"py.warnings"}
+{"timestamp":"2025-05-27T07:37:06.676507","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator"}
+{"timestamp":"2025-05-27T07:37:06.853428Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-27T07:37:06.853794Z","level":"info","event":" Previous state of the Task instance: running","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-27T07:37:06.854035Z","level":"info","event":"Task operator:<Task(PythonOperator): run_kpi_analysis>","chan":"stdout","logger":"task"}

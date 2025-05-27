@@ -1,0 +1,104 @@
+{"timestamp":"2025-05-26T04:35:03.886500","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-05-26T04:35:03.888923","level":"info","event":"Filling up the DagBag from /home/sheela/airflow/dags/orderinfo_etl_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-05-26T04:35:08.018854Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T04:35:08.021734Z","level":"info","event":" Previous state of the Task instance: queued","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T04:35:08.022077Z","level":"info","event":"Current task name:pull_orders_complete","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T04:35:08.022376Z","level":"info","event":"Dag name:orderinfo_etl_pipeline","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T04:35:08.068490","level":"warning","event":"Your application has authenticated using end user credentials from Google Cloud SDK without a quota project. You might receive a \"quota exceeded\" or \"API not enabled\" error. See the following page for troubleshooting: https://cloud.google.com/docs/authentication/adc-troubleshooting/user-creds. ","category":"UserWarning","filename":"/mnt/c/Users/SJENNIFE/airflow_test/lib/python3.12/site-packages/google/auth/_default.py","lineno":76,"logger":"py.warnings"}
+{"timestamp":"2025-05-26T04:35:29.587840","level":"warning","event":"No project ID could be determined. Consider running `gcloud config set project` or setting the GOOGLE_CLOUD_PROJECT environment variable","logger":"google.auth._default"}
+{"timestamp":"2025-05-26T04:35:41.352343","level":"warning","event":"BigQuery Storage module not found, fetch data with the REST endpoint instead.","category":"UserWarning","filename":"/mnt/c/Users/SJENNIFE/airflow_test/lib/python3.12/site-packages/google/cloud/bigquery/table.py","lineno":1962,"logger":"py.warnings"}
+{"timestamp":"2025-05-26T04:35:42.786583Z","level":"info","event":"Completed orders pulled and saved as orders_succ.csv","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T04:35:42.787343Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T04:35:42.793847Z","level":"info","event":" Previous state of the Task instance: running","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T04:35:42.794963Z","level":"info","event":"Task operator:<Task(PythonOperator): pull_orders_complete>","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T04:35:42.774645","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator"}
+{"timestamp":"2025-05-26T09:17:20.769286","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-05-26T09:17:20.773525","level":"info","event":"Filling up the DagBag from /home/sheela/airflow/dags/orderinfo_etl_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-05-26T09:17:24.037995Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T09:17:24.038443Z","level":"info","event":"--- Generated DDL ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T09:17:24.038678Z","level":"info","event":" CREATE TABLE orderinfo_bq_test (","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T09:17:24.038859Z","level":"info","event":"    order_id integer,","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T09:17:24.039012Z","level":"info","event":"    user_id integer,","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T09:17:24.039202Z","level":"info","event":"    status text,","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T09:17:24.039419Z","level":"info","event":"    gender text,","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T09:17:24.039602Z","level":"info","event":"    created_at timestamp without time zone,","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T09:17:24.039907Z","level":"info","event":"    returned_at timestamp without time zone,","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T09:17:24.040108Z","level":"info","event":"    shipped_at timestamp without time zone,","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T09:17:24.040306Z","level":"info","event":"    delivered_at timestamp without time zone,","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T09:17:24.040473Z","level":"info","event":"    num_of_item integer,","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T09:17:24.040623Z","level":"info","event":"    is_cancelled boolean,","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T09:17:24.040770Z","level":"info","event":"    delivery_duration_days double precision);","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T09:17:24.590860Z","level":"info","event":"⚠️ Error executing DDL (likely table exists): (psycopg2.errors.DuplicateTable) relation \"orderinfo_bq_test\" already exists","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T09:17:24.591411Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T09:17:24.591717Z","level":"info","event":"[SQL: CREATE TABLE orderinfo_bq_test (","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T09:17:24.591906Z","level":"info","event":"    order_id integer,","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T09:17:24.592060Z","level":"info","event":"    user_id integer,","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T09:17:24.592215Z","level":"info","event":"    status text,","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T09:17:24.592429Z","level":"info","event":"    gender text,","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T09:17:24.592715Z","level":"info","event":"    created_at timestamp without time zone,","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T09:17:24.593055Z","level":"info","event":"    returned_at timestamp without time zone,","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T09:17:24.593438Z","level":"info","event":"    shipped_at timestamp without time zone,","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T09:17:24.593865Z","level":"info","event":"    delivered_at timestamp without time zone,","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T09:17:24.594132Z","level":"info","event":"    num_of_item integer,","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T09:17:24.594300Z","level":"info","event":"    is_cancelled boolean,","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T09:17:24.594479Z","level":"info","event":"    delivery_duration_days double precision);]","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T09:17:24.594625Z","level":"info","event":"(Background on this error at: https://sqlalche.me/e/14/f405)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T09:17:25.319669Z","level":"info","event":" Error loading CSV to PostgreSQL via psycopg2: column \"returned_at\" is of type timestamp without time zone but expression is of type double precision","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T09:17:25.320059Z","level":"info","event":"LINE 1: ...S (5, 4, 'Cancelled', 'F', '2025-02-11 16:50:00', 'NaN'::flo...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T09:17:25.320290Z","level":"info","event":"                                                             ^","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T09:17:25.320469Z","level":"info","event":"HINT:  You will need to rewrite or cast the expression.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T09:17:25.320653Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T09:17:25.474694Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T09:17:25.475648Z","level":"info","event":" Previous state of the Task instance: queued","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T09:17:25.476074Z","level":"info","event":"Current task name:pull_orders_complete","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T09:17:25.476651Z","level":"info","event":"Dag name:orderinfo_etl_pipeline","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T09:17:25.837355","level":"warning","event":"Your application has authenticated using end user credentials from Google Cloud SDK without a quota project. You might receive a \"quota exceeded\" or \"API not enabled\" error. See the following page for troubleshooting: https://cloud.google.com/docs/authentication/adc-troubleshooting/user-creds. ","category":"UserWarning","filename":"/mnt/c/Users/SJENNIFE/airflow_test/lib/python3.12/site-packages/google/auth/_default.py","lineno":76,"logger":"py.warnings"}
+{"timestamp":"2025-05-26T09:17:36.654464","level":"warning","event":"No project ID could be determined. Consider running `gcloud config set project` or setting the GOOGLE_CLOUD_PROJECT environment variable","logger":"google.auth._default"}
+{"timestamp":"2025-05-26T09:17:38.282512","level":"warning","event":"BigQuery Storage module not found, fetch data with the REST endpoint instead.","category":"UserWarning","filename":"/mnt/c/Users/SJENNIFE/airflow_test/lib/python3.12/site-packages/google/cloud/bigquery/table.py","lineno":1962,"logger":"py.warnings"}
+{"timestamp":"2025-05-26T09:17:39.161509Z","level":"info","event":"Completed orders pulled and saved as orders_succ.csv","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T09:17:39.161877Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T09:17:39.162183Z","level":"info","event":" Previous state of the Task instance: running","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T09:17:39.162416Z","level":"info","event":"Task operator:<Task(PythonOperator): pull_orders_complete>","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T09:17:39.157704","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator"}
+{"timestamp":"2025-05-26T10:20:46.499678","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-05-26T10:20:46.503646","level":"info","event":"Filling up the DagBag from /home/sheela/airflow/dags/orderinfo_etl_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-05-26T10:20:50.580141Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T10:20:50.580878Z","level":"info","event":" Previous state of the Task instance: queued","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T10:20:50.581542Z","level":"info","event":"Current task name:pull_orders_complete","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T10:20:50.581896Z","level":"info","event":"Dag name:orderinfo_etl_pipeline","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T10:20:50.679430","level":"warning","event":"Your application has authenticated using end user credentials from Google Cloud SDK without a quota project. You might receive a \"quota exceeded\" or \"API not enabled\" error. See the following page for troubleshooting: https://cloud.google.com/docs/authentication/adc-troubleshooting/user-creds. ","category":"UserWarning","filename":"/mnt/c/Users/SJENNIFE/airflow_test/lib/python3.12/site-packages/google/auth/_default.py","lineno":76,"logger":"py.warnings"}
+{"timestamp":"2025-05-26T10:21:08.717235","level":"warning","event":"No project ID could be determined. Consider running `gcloud config set project` or setting the GOOGLE_CLOUD_PROJECT environment variable","logger":"google.auth._default"}
+{"timestamp":"2025-05-26T10:21:11.133446","level":"warning","event":"BigQuery Storage module not found, fetch data with the REST endpoint instead.","category":"UserWarning","filename":"/mnt/c/Users/SJENNIFE/airflow_test/lib/python3.12/site-packages/google/cloud/bigquery/table.py","lineno":1962,"logger":"py.warnings"}
+{"timestamp":"2025-05-26T10:21:12.225189Z","level":"info","event":"Completed orders pulled and saved as orders_succ.csv","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T10:21:12.233670Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T10:21:12.233998Z","level":"info","event":" Previous state of the Task instance: running","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T10:21:12.234241Z","level":"info","event":"Task operator:<Task(PythonOperator): pull_orders_complete>","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T10:21:12.228417","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator"}
+{"timestamp":"2025-05-26T11:01:32.522044","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-05-26T11:01:32.525078","level":"info","event":"Filling up the DagBag from /home/sheela/airflow/dags/orderinfo_etl_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-05-26T11:01:36.663106Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T11:01:36.663575Z","level":"info","event":" Previous state of the Task instance: queued","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T11:01:36.663898Z","level":"info","event":"Current task name:pull_orders_complete","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T11:01:36.664287Z","level":"info","event":"Dag name:orderinfo_etl_pipeline","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T11:01:36.783967","level":"warning","event":"Your application has authenticated using end user credentials from Google Cloud SDK without a quota project. You might receive a \"quota exceeded\" or \"API not enabled\" error. See the following page for troubleshooting: https://cloud.google.com/docs/authentication/adc-troubleshooting/user-creds. ","category":"UserWarning","filename":"/mnt/c/Users/SJENNIFE/airflow_test/lib/python3.12/site-packages/google/auth/_default.py","lineno":76,"logger":"py.warnings"}
+{"timestamp":"2025-05-26T11:01:45.821482","level":"warning","event":"No project ID could be determined. Consider running `gcloud config set project` or setting the GOOGLE_CLOUD_PROJECT environment variable","logger":"google.auth._default"}
+{"timestamp":"2025-05-26T11:01:52.303858","level":"warning","event":"BigQuery Storage module not found, fetch data with the REST endpoint instead.","category":"UserWarning","filename":"/mnt/c/Users/SJENNIFE/airflow_test/lib/python3.12/site-packages/google/cloud/bigquery/table.py","lineno":1962,"logger":"py.warnings"}
+{"timestamp":"2025-05-26T11:01:52.941233Z","level":"info","event":"Completed orders pulled and saved as orders_succ.csv","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T11:01:52.942366","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator"}
+{"timestamp":"2025-05-26T11:01:53.062158Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T11:01:53.062709Z","level":"info","event":" Previous state of the Task instance: running","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T11:01:53.063154Z","level":"info","event":"Task operator:<Task(PythonOperator): pull_orders_complete>","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T12:18:37.306071","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-05-26T12:18:37.311565","level":"info","event":"Filling up the DagBag from /home/sheela/airflow/dags/orderinfo_etl_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-05-26T12:18:46.112389Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T12:18:46.127235Z","level":"info","event":" Previous state of the Task instance: queued","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T12:18:46.127645Z","level":"info","event":"Current task name:pull_orders_complete","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T12:18:46.127926Z","level":"info","event":"Dag name:orderinfo_etl_pipeline","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T12:18:43.308798","level":"warning","event":"Your application has authenticated using end user credentials from Google Cloud SDK without a quota project. You might receive a \"quota exceeded\" or \"API not enabled\" error. See the following page for troubleshooting: https://cloud.google.com/docs/authentication/adc-troubleshooting/user-creds. ","category":"UserWarning","filename":"/mnt/c/Users/SJENNIFE/airflow_test/lib/python3.12/site-packages/google/auth/_default.py","lineno":76,"logger":"py.warnings"}
+{"timestamp":"2025-05-26T12:19:02.936204","level":"warning","event":"No project ID could be determined. Consider running `gcloud config set project` or setting the GOOGLE_CLOUD_PROJECT environment variable","logger":"google.auth._default"}
+{"timestamp":"2025-05-26T12:19:05.171936","level":"warning","event":"BigQuery Storage module not found, fetch data with the REST endpoint instead.","category":"UserWarning","filename":"/mnt/c/Users/SJENNIFE/airflow_test/lib/python3.12/site-packages/google/cloud/bigquery/table.py","lineno":1962,"logger":"py.warnings"}
+{"timestamp":"2025-05-26T12:19:06.268081Z","level":"info","event":"Completed orders pulled and saved as orders_succ.csv","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T12:19:06.271146","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator"}
+{"timestamp":"2025-05-26T12:19:06.848127Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T12:19:06.848451Z","level":"info","event":" Previous state of the Task instance: running","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-26T12:19:06.848702Z","level":"info","event":"Task operator:<Task(PythonOperator): pull_orders_complete>","chan":"stdout","logger":"task"}

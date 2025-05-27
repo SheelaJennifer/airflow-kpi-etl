@@ -1,0 +1,2 @@
+{"timestamp":"2025-05-15T14:01:39.105222","level":"info","event":"Filling up the DagBag from /mnt/c/Users/SJENNIFE/airflow_test/lib/python3.12/site-packages/airflow/example_dags/example_kubernetes_executor.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-05-15T14:01:39.179530","level":"warning","event":"The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-airflow[cncf.kubernetes]","logger":"unusual_prefix_9fc29b0b8783e98f002d8358fdbd49ab6b8ee29e_example_kubernetes_executor"}

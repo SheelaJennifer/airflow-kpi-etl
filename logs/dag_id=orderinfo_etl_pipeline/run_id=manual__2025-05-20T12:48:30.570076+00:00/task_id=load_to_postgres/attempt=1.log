@@ -1,0 +1,29 @@
+{"timestamp":"2025-05-20T12:49:06.101288","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-05-20T12:49:06.103432","level":"info","event":"Filling up the DagBag from /home/sheela/airflow/dags/orderinfo_etl_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-05-20T12:49:08.686125Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-20T12:49:08.686796Z","level":"info","event":" Previous state of the Task instance: queued","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-20T12:49:08.687029Z","level":"info","event":"Current task name:load_to_postgres","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-20T12:49:08.687184Z","level":"info","event":"Dag name:orderinfo_etl_pipeline","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-20T12:49:09.445122Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-20T12:49:09.445648Z","level":"info","event":"--- Generated DDL ---","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-20T12:49:09.445949Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-20T12:49:09.446170Z","level":"info","event":"CREATE TABLE orderinfo_bq (","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-20T12:49:09.446401Z","level":"info","event":"    order_id integer,","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-20T12:49:09.446635Z","level":"info","event":"    user_id integer,","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-20T12:49:09.446893Z","level":"info","event":"    status text,","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-20T12:49:09.447105Z","level":"info","event":"    gender text,","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-20T12:49:09.447312Z","level":"info","event":"    created_at timestamp without time zone,","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-20T12:49:09.447503Z","level":"info","event":"    returned_at timestamp without time zone,","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-20T12:49:09.447709Z","level":"info","event":"    shipped_at timestamp without time zone,","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-20T12:49:09.447936Z","level":"info","event":"    delivered_at timestamp without time zone,","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-20T12:49:09.448147Z","level":"info","event":"    num_of_item integer,","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-20T12:49:09.448484Z","level":"info","event":"    is_cancelled boolean,","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-20T12:49:09.448851Z","level":"info","event":"    delivery_duration_days double precision);","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-20T12:49:09.936282Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-20T12:49:09.936665Z","level":"info","event":" DDL executed successfully.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-20T12:49:09.941184","level":"warning","event":"pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.","category":"UserWarning","filename":"/home/sheela/airflow/dags/load_data.py","lineno":69,"logger":"py.warnings"}
+{"timestamp":"2025-05-20T12:49:09.948688Z","level":"info","event":"Error loading CSV to PostgreSQL: 'Engine' object has no attribute 'cursor'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-20T12:49:09.949543","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator"}
+{"timestamp":"2025-05-20T12:49:11.724283Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-20T12:49:11.724853Z","level":"info","event":" Previous state of the Task instance: running","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-20T12:49:11.726657Z","level":"info","event":"Task operator:<Task(PythonOperator): load_to_postgres>","chan":"stdout","logger":"task"}

@@ -1,0 +1,22 @@
+{"timestamp":"2025-05-21T08:57:41.362244","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-05-21T08:57:41.522926","level":"info","event":"Filling up the DagBag from /home/sheela/airflow/dags/orderinfo_etl_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-05-21T08:57:50.962530Z","level":"error","event":"Server indicated the task shouldn't be running anymore. Terminating process","detail":{"detail":{"reason":"not_found","message":"Task Instance not found"}},"logger":"task"}
+{"timestamp":"2025-05-21T08:57:51.428885Z","level":"error","event":"Task killed!","logger":"task"}
+{"timestamp":"2025-05-21T13:25:47.113214","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-05-21T13:25:47.116688","level":"info","event":"Filling up the DagBag from /home/sheela/airflow/dags/orderinfo_etl_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-05-21T13:25:48.317609Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-21T13:25:48.318062Z","level":"info","event":" Previous state of the Task instance: queued","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-21T13:25:48.318336Z","level":"info","event":"Current task name:pull_orders_sample","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-21T13:25:48.318834Z","level":"info","event":"Dag name:orderinfo_etl_pipeline","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-21T13:25:48.378665","level":"warning","event":"Your application has authenticated using end user credentials from Google Cloud SDK without a quota project. You might receive a \"quota exceeded\" or \"API not enabled\" error. See the following page for troubleshooting: https://cloud.google.com/docs/authentication/adc-troubleshooting/user-creds. ","category":"UserWarning","filename":"/mnt/c/Users/SJENNIFE/airflow_test/lib/python3.12/site-packages/google/auth/_default.py","lineno":76,"logger":"py.warnings"}
+{"timestamp":"2025-05-21T13:26:03.107427","level":"warning","event":"No project ID could be determined. Consider running `gcloud config set project` or setting the GOOGLE_CLOUD_PROJECT environment variable","logger":"google.auth._default"}
+{"timestamp":"2025-05-21T13:26:04.761629","level":"warning","event":"BigQuery Storage module not found, fetch data with the REST endpoint instead.","category":"UserWarning","filename":"/mnt/c/Users/SJENNIFE/airflow_test/lib/python3.12/site-packages/google/cloud/bigquery/table.py","lineno":1962,"logger":"py.warnings"}
+{"timestamp":"2025-05-21T13:26:05.351054Z","level":"info","event":"Data pulled and saved as orders_sample.csv","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-21T13:26:05.351648","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator"}
+{"timestamp":"2025-05-21T13:26:05.407657Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-21T13:26:05.407942Z","level":"info","event":" Previous state of the Task instance: running","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-21T13:26:05.408109Z","level":"info","event":"Task operator:<Task(PythonOperator): pull_orders_sample>","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-21T14:07:22.318628","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-05-21T14:07:22.325642","level":"info","event":"Filling up the DagBag from /home/sheela/airflow/dags/orderinfo_etl_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-05-21T14:07:22.985904Z","level":"error","event":"Server indicated the task shouldn't be running anymore. Terminating process","detail":{"detail":{"reason":"running_elsewhere","message":"TI is already running elsewhere","current_hostname":"","current_pid":null}},"logger":"task"}
+{"timestamp":"2025-05-21T14:07:22.999688Z","level":"error","event":"Task killed!","logger":"task"}

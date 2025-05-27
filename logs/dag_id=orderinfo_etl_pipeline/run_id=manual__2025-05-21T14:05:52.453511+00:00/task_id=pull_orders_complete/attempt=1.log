@@ -1,0 +1,9 @@
+{"timestamp":"2025-05-21T14:07:23.156132","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-05-21T14:07:23.161499","level":"info","event":"Filling up the DagBag from /home/sheela/airflow/dags/orderinfo_etl_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-05-21T14:07:25.251334Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-21T14:07:25.252609Z","level":"info","event":" Previous state of the Task instance: queued","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-21T14:07:25.253067Z","level":"info","event":"Current task name:pull_orders_complete","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-21T14:07:25.253350Z","level":"info","event":"Dag name:orderinfo_etl_pipeline","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-21T14:07:25.303690","level":"warning","event":"Your application has authenticated using end user credentials from Google Cloud SDK without a quota project. You might receive a \"quota exceeded\" or \"API not enabled\" error. See the following page for troubleshooting: https://cloud.google.com/docs/authentication/adc-troubleshooting/user-creds. ","category":"UserWarning","filename":"/mnt/c/Users/SJENNIFE/airflow_test/lib/python3.12/site-packages/google/auth/_default.py","lineno":76,"logger":"py.warnings"}
+{"timestamp":"2025-05-21T14:07:30.477301Z","level":"error","event":"Server indicated the task shouldn't be running anymore. Terminating process","detail":{"detail":{"reason":"running_elsewhere","message":"TI is already running elsewhere","current_hostname":"","current_pid":null}},"logger":"task"}
+{"timestamp":"2025-05-21T14:07:30.511800Z","level":"error","event":"Task killed!","logger":"task"}
