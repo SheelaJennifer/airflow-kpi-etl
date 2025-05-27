@@ -22,34 +22,40 @@ airflow/
 ├── dags/
 │   ├── orderinfo_etl_dag.py         # DAG definition
 │   ├── scripts/
+│   │   ├── data_pull_1.py           # Script to extract batch 1 from Bigquery
+│   │   ├── data_pull_2.py           # Script to extract batch 2 from Bigquery
+│   │   ├── clean_data.py            # Cleans and merges extracted data
+│   │   ├── load_data.py             # Loads cleaned data into DB or temp table
 │   │   └── kpi_analysis.py          # Python script to compute KPIs
 │   └── kpi_output/                  # CSV output reports
 ├── data/                            # Optional: raw sample data
 ├── logs/                            # Airflow logs
 ├── requirements.txt                 # Python dependencies
 └── README.md                        # Project overview
-
+```
 
 ## Setup Instructions
 1. **Clone the repository**:
-   ```bash
-
+```bash
 git clone https://github.com/your-username/orderinfo-airflow-kpi.git
 cd orderinfo-airflow-kpi
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 
-2. **Configure Airflow**:
+```
 
+2. **Configure Airflow**:
+```bash
 export AIRFLOW_HOME=~/airflow
 airflow db init
 airflow users create --username admin --firstname Sheela --lastname Jennifer --role Admin --email your@email.com
 airflow webserver --port 8080
-
+```
 # In a new terminal
+```bash
 airflow scheduler
-
+```
 3. **Postgres Setup**:
 Ensure you have a PostgreSQL instance running and create a database named `orderinfo_db`.
 
